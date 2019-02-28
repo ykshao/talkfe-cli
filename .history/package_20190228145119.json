@@ -1,6 +1,6 @@
 {
   "name": "talkfe-cli",
-  "version": "1.0.6",
+  "version": "1.0.5",
   "description": "51Talk前端开发脚手架",
   "main": "index.js",
   "scripts": {
@@ -19,9 +19,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ykshao/talkfe-cli/issues"
+    "url": "https://github.com/ykshao/talk-cli/issues"
   },
-  "homepage": "https://github.com/ykshao/talkfe-cli#readme",
+  "homepage": "https://github.com/ykshao/talk-cli#readme",
   "bin": {
     "talkfe": "./bin/talkfe"
   },
