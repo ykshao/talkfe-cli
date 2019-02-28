@@ -1,0 +1,46 @@
+#!/usr/bin/env node
+
+const chalk = require('chalk')
+const fs = require('fs')
+const {resolve} = require('path')
+const res = command => resolve(__dirname, '../command/', command)
+const program = require('commander')
+
+const logo = fs.readFileSync(resolve(__dirname, '../banner.txt'), "utf-8");
+
+program.version(`
+  ${chalk.bold.yellow(logo)}
+  ${chalk.bold.cyan(require('../package').version)}
+`)
+
+program.usage('<command>')
+
+program
+  .command('init')
+  .alias('i')
+  .description('初始化项目')
+  .action(() => {
+    require(res('init'))
+  })
+
+program
+  .command('start')
+  .description('开发项目')
+  .alias('s')
+  .action((project, option) => {
+    require(res('start'))(project, option)
+  })
+
+program
+  .command('build')
+  .alias('b')
+  .description('打包项目')
+  .action(require(res('build')))
+
+program.parse(process.argv)
+
+if (program.args.length < 1) {
+  program.help()
+}
+
+

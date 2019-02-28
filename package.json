@@ -1,0 +1,36 @@
+{
+  "name": "talkfe-cli",
+  "version": "1.0.5",
+  "description": "51Talk前端开发脚手架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ykshao/talk-cli.git"
+  },
+  "keywords": [
+    "talkfe",
+    "51talk",
+    "脚手架",
+    "前端"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ykshao/talk-cli/issues"
+  },
+  "homepage": "https://github.com/ykshao/talk-cli#readme",
+  "bin": {
+    "talkfe": "./bin/talkfe"
+  },
+  "dependencies": {
+    "chalk": "^2.3.2",
+    "commander": "^2.15.0",
+    "download-git-repo": "^1.1.0",
+    "inquirer": "^6.2.0",
+    "is-plain-object": "^2.0.4",
+    "ora": "^3.0.0"
+  }
+}

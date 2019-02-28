@@ -1,0 +1,14 @@
+{
+  "vue-project": {
+    "place": "ykshao/vue-project",
+    "branch": "#master"
+  },
+  "complete-project": {
+    "place": "ykshao/react-template",
+    "branch": "#complete"
+  },
+  "simple-project": {
+    "place": "ykshao/react-template",
+    "branch": "#simple"
+  }
+}
